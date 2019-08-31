@@ -1,0 +1,67 @@
+<!--
+    Author: ROUSHAN RAJ
+    Description: This is a very basic weather web application which uses local data
+    to display the weather of few popular cities which are being mentioned.
+    This application is made from very basic fundamental concepts of HTML,CSS and Javascript.
+    This is just for learning purpose
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEATHER APP</title>
+        <!--Linking of the CSS file-->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!--Meta data for search engines and browsers-->
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a weather application 
+        provides weather destails of cities based on user search">
+        <meta name="author" content="ROUSHAN RAJ">
+        <meta name="viewport" content="width = device-width, 
+        initial-Scale = 1.0">
+        
+    </head>
+
+
+    <body style="font-family: sans-serif"> 
+        
+        <div class="split left">
+            <div class="centered">
+            <h1 style="color:azure"> Weather <span style="color: black">App</span></h1>
+            </div>
+        </div>
+  
+        <div class="split right">
+                <p class="city" id="city">Bangalore,</p>
+                <p class="state"id="state">Karnataka</p>
+                <p class="day"id="day">Wednesday</p>
+                <p class="weather"id="weather">Cloudy</p>
+                <p class="icon" id="icon">☁️</p>
+                <p class="time" id="time">1:00</p>
+                <p class="temp" id="temp">26</p>
+                <p class="C" id="C" onclick="changeToCelsius()">&#8451;</p>
+                <p class="or" id="or">|</p>
+                <p class="F" id="F" onclick="changeToFarenheit()">&#8457;</p>
+                        <div class="inputDetails">
+                            <div class="placeholder">Enter city name</div>
+                                <div class="input">
+                                    <input id="in" type="text" name="city" placeholder="City name" onchange="changeCity()"list="datalist" >
+                                    <datalist id="datalist"> 
+                                    <option value="Gr.Noida"></option> 
+                                    <option value="Bangalore" ></option> 
+                                    <option value="Jaipur" ></option>  
+                                    <option value="Mumbai"></option> 
+                                    <option value="Ranchi"></option> 
+                                    <option value="Gurgaon"></option> 
+                                    <option value="Patna"></option>       
+                                    </datalist>
+                                 </div>
+                             </div>
+                        </div>
+        </div>            
+
+<!--Linking of the Javascript File-->
+  <script src="script.js"></script> 
+</body>
+
+
+</html>
